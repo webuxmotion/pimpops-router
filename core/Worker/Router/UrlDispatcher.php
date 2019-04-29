@@ -38,7 +38,7 @@ class UrlDispatcher {
   }
 
   private function replacePattern($matches) {
-    return'(?<' . $matches[1] . '>' . strtr($matches[2], $this->patterns) . ')';
+    return '(?<' . $matches[1] . '>' . strtr($matches[2], $this->patterns) . ')';
   }
 
   private function processParam($parameters) {
